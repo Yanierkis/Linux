@@ -1,2 +1,2 @@
 # Linux
-Consola de comandos
+Todo hecho a través de consola de comandos
