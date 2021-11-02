@@ -1,0 +1,17 @@
+Ajuste de pantalla:
+
+1º Entrar por ssh:
+           ssh usuario@1direccion_ip
+           contraseña:"contraseña"
+
+2º Ver a qué canal de HDMI tenemos que referirnos:
+           DISPLAY=:0 xrandr               //nos dice que puerto está conectado, en este caso el HDMI-2
+
+3º Seleccionamos formato adecuado:
+           DISPLAY=:0 xrandr --output "HDMI-2" --primary --scale 0.5x0.5
+
+4º Una vez tenemos esto volvemos a hacer captura de pantalla con scrot
+           DISPLAY=:0 scrot -d 3
+           ls                             //para ver que nombre tiene
+
+5º Buscar en Filezilla el archivo
