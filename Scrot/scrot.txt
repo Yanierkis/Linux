@@ -1,0 +1,18 @@
+1º Entramos por ssh:
+
+       ssh usuario@dirección_ip
+       contraseña: "contraseña"
+
+ 2º Nos hacemos superadmin e instalamos los programas necesarios
+
+        sudo su
+        ...
+        apt-get install imagenmagick
+         "       "       scrot
+
+  3º Instaladas las cosas nos salimos de sudo y hacemos la captura con scrot
+
+         DISPLAY=:0 scrot -d 3     //No hace falta que sea a los 3 segundos
+
+
+   4º Hacemos un ls para ver el nombre de la imagen y la cogemos con Filezilla
